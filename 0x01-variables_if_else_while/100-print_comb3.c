@@ -7,19 +7,24 @@
  */
 int main(void)
 {
-	int m, n;
+	int d1, d2;
 
-	for (int i = 0; i < 72; i++)
+	for (d1 = 0; d1 < 9; d1++)
 	{
-		m = i / 9;
-		n = i % 9;
-		if (m != n)
+		for (d2 = d1 + 1; d2 < 10; d2++)
 		{
-			putchar(m + '0');
+			putchar((d1 % 10) + '0');
+			putchar((d2 % 10) + '0');
+
+			if (d1 == 8 && d2 == 9)
+				continue;
+
 			putchar(',');
-			putchar(n + '0');
 			putchar(' ');
 		}
 	}
+
+	putchar('\n');
+
 	return (0);
 }
