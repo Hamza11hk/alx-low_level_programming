@@ -24,9 +24,9 @@ void print_number(int n)
 
 		while (t >= 1)
 		{
-			d = positive / t;
+			d = p / t;
 			_putchar(d + '0');
-			positive = (positive - (t * d));
+			p = (p - (t * d));
 			t /= 10;
 		}
 	}
