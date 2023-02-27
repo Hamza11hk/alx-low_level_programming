@@ -3,7 +3,7 @@
 /**
  * _puts - puts a string
  * @str: sting to print
- */
+*/
 void _puts(char *str)
 {
 	while (*str)
