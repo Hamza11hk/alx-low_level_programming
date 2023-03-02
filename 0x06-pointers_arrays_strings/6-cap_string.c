@@ -11,7 +11,7 @@ char *cap_string(char *x)
 	while (x[i])
 	{
 		while (!(x[i] >= 'a' && x[i] <= 'z'))
-			index++;
+			i++;
 
 		if (x[i - 1] == ' ' ||
 		    x[i - 1] == '\t' ||
