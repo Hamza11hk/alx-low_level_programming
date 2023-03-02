@@ -18,8 +18,9 @@ char *leet(char *x)
 			x[i] = '0';
 		while (x[i] == 't' || x[i] == 'T')
 			x[i] = '7';
-		while (x[i] == '1' || x[i] == 'L')
+		while (x[i] == 'l' || x[i] == 'L')
 			x[i] = '1';
 	}
+
 	return (x);
 }
