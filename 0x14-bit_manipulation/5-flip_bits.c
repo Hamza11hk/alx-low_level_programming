@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int dif = n ^ m;
 	unsigned int i = 0;
 
-	for (i = 0; i < sizeof() * 8; i++)
+	for (i = 0; i < sizeof(unsigned long int) * 8; i++)
 	{
 		if ((dif & (1UL << i)) != 0)
 			db++;
